@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="RestaurantsReservations_New <= 0.5\ngini = 0.345\nsamples = 4694\nvalue = [3653, 1041]"] ;
+1 [label="RestaurantsPriceRange2 <= 1.5\ngini = 0.267\nsamples = 3069\nvalue = [2581, 488]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="HasTV_New <= 0.5\ngini = 0.211\nsamples = 1873\nvalue = [1648, 225]"] ;
+1 -> 2 ;
+3 [label="gini = 0.173\nsamples = 1184\nvalue = [1071, 113]"] ;
+2 -> 3 ;
+4 [label="gini = 0.272\nsamples = 689\nvalue = [577, 112]"] ;
+2 -> 4 ;
+5 [label="OutdoorSeating_New <= 0.5\ngini = 0.343\nsamples = 1196\nvalue = [933, 263]"] ;
+1 -> 5 ;
+6 [label="gini = 0.294\nsamples = 888\nvalue = [729, 159]"] ;
+5 -> 6 ;
+7 [label="gini = 0.447\nsamples = 308\nvalue = [204, 104]"] ;
+5 -> 7 ;
+8 [label="RestaurantsPriceRange2 <= 2.5\ngini = 0.449\nsamples = 1625\nvalue = [1072, 553]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Cuisine_Japanese <= 0.5\ngini = 0.427\nsamples = 1326\nvalue = [917, 409]"] ;
+8 -> 9 ;
+10 [label="gini = 0.412\nsamples = 1187\nvalue = [842, 345]"] ;
+9 -> 10 ;
+11 [label="gini = 0.497\nsamples = 139\nvalue = [75, 64]"] ;
+9 -> 11 ;
+12 [label="WiFi_New <= 0.5\ngini = 0.499\nsamples = 299\nvalue = [155, 144]"] ;
+8 -> 12 ;
+13 [label="gini = 0.485\nsamples = 177\nvalue = [104, 73]"] ;
+12 -> 13 ;
+14 [label="gini = 0.487\nsamples = 122\nvalue = [51, 71]"] ;
+12 -> 14 ;
+}

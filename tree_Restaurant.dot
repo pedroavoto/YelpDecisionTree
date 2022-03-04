@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="RestaurantsPriceRange2 <= 1.5\ngini = 0.18\nsamples = 862\nvalue = [776, 86]"] ;
+1 [label="Cuisine_Vietnamese <= 0.5\ngini = 0.07\nsamples = 357\nvalue = [344, 13]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Alcohol_New <= 0.5\ngini = 0.061\nsamples = 351\nvalue = [340, 11]"] ;
+1 -> 2 ;
+3 [label="gini = 0.046\nsamples = 295\nvalue = [288, 7]"] ;
+2 -> 3 ;
+4 [label="gini = 0.133\nsamples = 56\nvalue = [52, 4]"] ;
+2 -> 4 ;
+5 [label="BusinessAcceptsCreditCards_New <= 0.5\ngini = 0.444\nsamples = 6\nvalue = [4, 2]"] ;
+1 -> 5 ;
+6 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]"] ;
+5 -> 6 ;
+7 [label="gini = 0.32\nsamples = 5\nvalue = [4, 1]"] ;
+5 -> 7 ;
+8 [label="RestaurantsPriceRange2 <= 2.5\ngini = 0.247\nsamples = 505\nvalue = [432, 73]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Cuisine_Vietnamese <= 0.5\ngini = 0.222\nsamples = 457\nvalue = [399, 58]"] ;
+8 -> 9 ;
+10 [label="gini = 0.215\nsamples = 450\nvalue = [395, 55]"] ;
+9 -> 10 ;
+11 [label="gini = 0.49\nsamples = 7\nvalue = [4, 3]"] ;
+9 -> 11 ;
+12 [label="GoodForKids_New <= 0.5\ngini = 0.43\nsamples = 48\nvalue = [33, 15]"] ;
+8 -> 12 ;
+13 [label="gini = 0.459\nsamples = 42\nvalue = [27, 15]"] ;
+12 -> 13 ;
+14 [label="gini = 0.0\nsamples = 6\nvalue = [6, 0]"] ;
+12 -> 14 ;
+}
